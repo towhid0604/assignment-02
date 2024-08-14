@@ -78,7 +78,12 @@ li {
 
 header {
   padding-bottom: 30px;
-  background-image: linear-gradient(rgb(43, 43, 43), rgba(119, 119, 119, 0));
+  background: linear-gradient(
+ 180deg,
+ rgba(19, 19, 19, 0.747) 0%,
+ rgb(30, 30, 30) 50%,
+ rgba(1, 1, 1, 0.719) 100%
+ );
 }
 .mobile-menu {
   visibility: hidden;
