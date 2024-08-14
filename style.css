@@ -70,15 +70,21 @@ body {
 .tx-left {
   text-align: left;
 }
+li {
+  list-style-type: none;
+}
 /* HEADER SECTION */
 
 header {
-  height: auto;
+  padding-bottom: 30px;
   background: linear-gradient(
     90deg,
     rgb(17, 17, 17),
-    rgba(119, 119, 119, 0) 100%
+    rgba(119, 119, 119, 2) 100%
   );
+}
+.mobile-menu {
+  visibility: hidden;
 }
 
 .header {
@@ -237,7 +243,6 @@ nav li {
 }
 
 .card-button {
-  /* margin: 20px 0; */
   color: white;
   background: rgb(230, 83, 60);
   border: none;
@@ -249,7 +254,6 @@ nav li {
 .image-content img {
   width: 365px;
   height: 310px;
-  max-width: 400px;
   object-fit: cover;
   border-radius: 15px;
 }
@@ -483,6 +487,7 @@ footer {
     display: none;
   }
   .mobile-menu {
+    font-size: 30px;
     color: white;
     text-align: right;
     visibility: visible;
@@ -496,6 +501,21 @@ footer {
   }
   .card {
     margin-bottom: 100px;
+  }
+  .card-container {
+    flex-direction: column;
+  }
+  .text-content {
+    margin: 0;
+  }
+  .card-button {
+    width: 100%;
+  }
+  .image-content {
+    margin-top: 20px;
+  }
+  .image-content img {
+    width: 100%;
   }
   .card-button,
   .primary-button {
