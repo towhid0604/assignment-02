@@ -502,7 +502,10 @@ footer {
   .card {
     margin-bottom: 100px;
   }
-  .card-container {
+  .habits,
+  .card-container,
+  .bmi-container,
+  .footer-container {
     flex-direction: column;
   }
   .text-content {
@@ -522,27 +525,16 @@ footer {
     padding: 10px 30px;
     margin: 0;
   }
-
-  .habits {
-    flex-direction: column;
-  }
   .team-container {
     grid-template-columns: repeat(1, 1fr);
   }
   .habit {
     width: 100%;
   }
-  .bmi-container {
-    flex-direction: column;
-  }
-  .footer-container {
-    flex-direction: column;
-  }
   .footer-links {
     flex-direction: column;
     gap: 20px;
   }
-
   .footer-column {
     min-width: auto;
   }
