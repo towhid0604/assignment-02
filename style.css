@@ -218,6 +218,7 @@ nav li {
   justify-content: center;
   align-items: flex-start;
   color: #ffffff;
+  margin-right: 250px;
 }
 
 .text-content h1 {
@@ -236,7 +237,7 @@ nav li {
 }
 
 .card-button {
-  margin: 20px 0;
+  /* margin: 20px 0; */
   color: white;
   background: rgb(230, 83, 60);
   border: none;
@@ -280,7 +281,7 @@ nav li {
 }
 
 .bmi-chart table {
-  margin-top: 20px;
+  margin-top: 35px;
   width: 100%;
   text-align: left;
   border-collapse: collapse;
@@ -302,6 +303,7 @@ nav li {
 }
 
 .bmi-calculator p {
+  color: rgba(255, 255, 255, 0.5);
   text-align: left;
   margin-bottom: 20px;
   font-size: 14px;
