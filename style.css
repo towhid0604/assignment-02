@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Grey+Qo&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -77,11 +78,7 @@ li {
 
 header {
   padding-bottom: 30px;
-  background: linear-gradient(
-    90deg,
-    rgb(17, 17, 17),
-    rgba(119, 119, 119, 2) 100%
-  );
+  background-image: linear-gradient(rgb(43, 43, 43), rgba(119, 119, 119, 0));
 }
 .mobile-menu {
   visibility: hidden;
@@ -128,7 +125,6 @@ nav li {
 /* Banner Styles */
 .banner {
   display: flex;
-  /* padding-top: 30px; */
 }
 
 .banner-text {
@@ -146,7 +142,9 @@ nav li {
 }
 
 .banner > div > h1 > span {
-  color: rgb(230, 83, 60);
+  font-family: "Grey Qo", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 .banner-subtitle {
   color: rgba(255, 255, 255, 0.5);
@@ -158,11 +156,70 @@ nav li {
 }
 .banner .banner-content {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   padding-top: 35px;
+  position: relative;
+  /* width: 400px; */
 }
-/*  */
+.container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.label {
+  color: white;
+  position: absolute;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(0.1px);
+  background: rgba(48, 48, 48, 0.54);
+}
+
+.label.one {
+  top: 34%;
+  left: 65%;
+  width: 175px;
+}
+
+.label.two {
+  top: 80%;
+  left: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.label span {
+  font-weight: lighter;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.circle {
+  background-color: #ff5722;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  margin: 5px;
+}
+/* HABIT SECTION */
 .habit-container {
   color: white;
   padding: 100px 0;
@@ -483,7 +540,8 @@ footer {
   .bmi {
     padding: 20px 25px;
   }
-  nav {
+  nav,
+  .play-button {
     display: none;
   }
   .mobile-menu {
@@ -499,6 +557,14 @@ footer {
     flex-direction: column;
     padding-top: 0;
   }
+  .banner-content {
+    margin: 0 auto;
+  }
+  .two {
+    top: 70%;
+    right: 25%;
+  }
+
   .card {
     margin-bottom: 0;
   }
