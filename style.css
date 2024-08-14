@@ -128,7 +128,7 @@ nav li {
 /* Banner Styles */
 .banner {
   display: flex;
-  padding-top: 30px;
+  /* padding-top: 30px; */
 }
 
 .banner-text {
@@ -382,7 +382,7 @@ nav li {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .trainer-info {
   position: absolute;
@@ -500,7 +500,7 @@ footer {
     padding-top: 0;
   }
   .card {
-    margin-bottom: 100px;
+    margin-bottom: 0;
   }
   .habits,
   .card-container,
